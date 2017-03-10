@@ -11,6 +11,20 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cabin+Sketch|Hind+Madurai|Julius+Sans+One|League+Script|Nixie+One|Pacifico|Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+    	   console.log("I'm Working on load!");
+    	    $(".scroll").click(function(event){
+    		      // alert("Clicked on scroll Bonitaaa!")
+    		  event.preventDefault();
+    		  $("html, body").animate({scrollTop:$(this.hash).offset().top}, 500);
+    		  $('.navbar-default a').removeClass('selected');
+    		  $(this).addClass('selected');
+        	});
+      });
+    </script>
   </head>
 
 
@@ -52,7 +66,9 @@
     <div id="content" class="fluid-container"  data-spy="scroll" data-target="#navigator">
       <div id="Home-Pic" class="container-fluid">
         <h2> Malwina Strenkowska<hr></h2><br>
-        <h4 > ꔷ PERSONAL PORTFOLIO PAGE ꔷ </h4>
+        <h4 ><i class="fa fa-sun-o" aria-hidden="true"></i> PERSONAL PORTFOLIO PAGE
+          <i class="fa fa-sun-o" aria-hidden="true"></i>
+        </h4>
         <!--<h3>Biophysics PhD ꔷ Aspiring Data Scientist ꔷ Web Developer</h3>-->
       </div>
       <div id="section1" class="container-fluid">
@@ -119,18 +135,18 @@
 
       <div id="section2" class="container-fluid">
           <div class="row">
-            <div class="col-lg">
+            <div class="col-lg col-md">
             </div>
-            <div class="col-lg-6 col-xs-2">
+            <div class="col-lg-6 col-md-4 col-xs-2">
               <h1>About<hr></h1>
               <p><span>Malwina</span> is an educated interdisciplinary researcher in the area of Bioorganic Chemistry, Molecular Biology and Biophysics with broad programming skills.
                 She is working currently on various projects in Data Science and Web Development. You can contact Malwina <a href="https://github.com/MalwinaNaNaNa">here </a>. </p>
             </div>
-            <div class="col-lg col-xs-2">
+            <div class="col-lg col-md-4 col-xs-2">
               <img class="responsive text-center" alt="Malwina" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAARoAAAAJGUzNTI0Mzc3LTg3YzEtNGIwMC04ZmYzLTZiODcyODYyODdiOQ.jpg">
               </img>
             </div>
-            <div class="col-lg">
+            <div class="col-lg col-md">
             </div>
           </div>
       </div>
