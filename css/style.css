@@ -42,7 +42,7 @@ nav {
 .fa-sun-o {color: #e3d9ad;}
 }
 
-#section1 {padding-top:120px;height:900px;color: #000; background-color: #fff;}
+#section1 {padding-top:120px;height:auto;color: #000; background-color: #fff;}
 #section1 h1 {font-family: 'Open Sans Condensed';
               width: 28%;
 }
@@ -64,9 +64,10 @@ span {font-weight: bold;}
 
 p {font-family: 'Open Sans Condensed'; font-size: 20px;}
 
-#website {object-fit: cover;
-              width:250px;
-              height:250px;
+
+#website {width:auto;
+          height:auto;
+          margin-bottom: 20px;
 }
 
 a {color: hotpink;}
@@ -112,7 +113,7 @@ footer {background: #fff; margin: 0px; padding: 0px}
   }
   .fa-sun-o {color: #e3d9ad;}
   }
-  #section1 {padding-top:15%;height:800px;color: #000; background-color: #fff;}
+  #section1 {padding-top:15%;height:auto ;color: #000; background-color: #fff;}
   #section1 h1 {font-family: 'Open Sans Condensed';
                 width: 28%; font-size: 40px;
   }
@@ -134,9 +135,17 @@ footer {background: #fff; margin: 0px; padding: 0px}
 
   p {font-family: 'Open Sans Condensed'; font-size: 20px;}
 
-  #website {object-fit: cover;
-                width:250px;
-                height:250px;
+  #website {
+    width:auto;
+    height:auto;
+  }
+
+  #website:hover {
+    z-index: 99;
+  position: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   }
 
   a {color: hotpink;}
